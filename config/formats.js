@@ -1575,6 +1575,7 @@ exports.Formats = [
 		banlist: ['Nature Power', 'Secret Power', 'Camoflauge', 'Raichu-Alola'],
 		unbanlist: ["Landorus"],
 		mod: 'allterrain',
+		team: 'random',
 		onBegin: function() {
 			this.setTerrain('allterrain');
 		},
