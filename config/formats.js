@@ -1568,6 +1568,16 @@ exports.Formats = [
 			this.runMove(pokemon.moves[pokemon.moves.length - 1], pokemon);
 		},
 	},
+	{
+		name: "[Gen 7] Pan-Z-Monium",
+		section: "Kappa Kup Season 4",
+		desc: [
+			"Z-Crystals can trigger any move as a z-move, and can be used once per move instead of once per battle.",
+		],
+		ruleset: ['[Gen 7] OU'],
+		mod: 'panzmonium',
+		searchShow: true,
+	},
 			{
 		name: "[Gen 7] Random All Terrain",
 		desc: ["&bullet; <a href=\"http://www.smogon.com/forums/threads/3596038/\">All Terrain</a>: All Terrain is a metagame in which all terrains are active permanently. Yes, Grassy, Electric, Misty and Psychic terrain are all active all at once."],
