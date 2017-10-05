@@ -144,7 +144,7 @@ class Validator {
 		}
 
 		let nameTemplate = dex.getTemplate(set.name);
-		if (toId(format.name) !== 'gen7crossevolution' && nameTemplate.exists && nameTemplate.name.toLowerCase() === set.name.toLowerCase()) {
+		if (toId(format.name) !== 'gen7crossevolutiondoubles' && nameTemplate.exists && nameTemplate.name.toLowerCase() === set.name.toLowerCase()) {
 			set.name = null;
 		}
 		set.name = set.name || set.baseSpecies;
