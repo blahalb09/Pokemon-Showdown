@@ -1571,11 +1571,17 @@ exports.Formats = [
 	{
 		name: "[Gen 7] Pan-Z-Monium",
 		desc: [
-			"Z-Crystals can trigger any move as a z-move, and can be used once per move instead of once per battle.",
+			"Z-Crystals can trigger any move as a z-move, and can be used once per move instead of once per battle. Ubers are not allowed to hold Z-Crystals.",
 		],
-		ruleset: ['[Gen 7] OU'],
+		ruleset: ['[Gen 7] Ubers'],
+		banlist: ['Uber + Z-Crystal'],
 		mod: 'panzmonium',
-		searchShow: true,
+		searchShow: false,
+		
+		onChangeSet: function(set, format, setHas) {
+			let item = this.getItem(set.item);
+			if (item.zMove) setHas['zcrystal'] = true;
+		},
 	},
 			{
 		name: "[Gen 7] Random All Terrain",
